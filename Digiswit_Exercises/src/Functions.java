@@ -3,6 +3,8 @@ import javax.xml.datatype.DatatypeConfigurationException;
 import java.io.IOException;
 
 import java.text.ParseException;
+import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Functions {
@@ -11,12 +13,25 @@ public class Functions {
 
         //    Exercise 1 - Find the second-largest number in an array
 
+        Scanner reader = new Scanner(System.in);
+        int size = 0;
+        System.out.println("Enter an integer number: ");
+        size = reader.nextInt();
+
         //I'll randomize elements of the array.
+        Random random = new Random();
+        int[] arrayExercise = random.ints(size, 1,100).toArray();
 
-        for (int i=0; i<20 ; i++){
+        //Printing the array for the user
+        System.out.println("Array created: " + Arrays.toString(arrayExercise));
 
+        //Once we have the array created, we'll proceed to arrange the array using a sorting algorithm, like Quicksort
+
+        int solution = 0; //variable to keep the solution
+        for (int i = 0; i < arrayExercise.length; i++){
 
         }
+        System.out.println(solution);
 
     }
 
