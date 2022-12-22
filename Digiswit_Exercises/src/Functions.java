@@ -18,7 +18,7 @@ public class Functions {
         System.out.println("Enter an integer number: ");
         size = reader.nextInt();
 
-        //I'll randomize elements of the array.
+        //We'll randomize elements of the array.
         Random random = new Random();
         int[] arrayExercise = random.ints(size, 1,100).toArray();
 
@@ -26,12 +26,12 @@ public class Functions {
         System.out.println("Array created: " + Arrays.toString(arrayExercise));
 
         //Once we have the array created, we'll proceed to arrange the array using a sorting algorithm, like Quicksort
+        Quicksort qs = new Quicksort();
+        qs.quicksort(arrayExercise, 0, arrayExercise.length - 1);
+        System.out.println("Array sorted: " + Arrays.toString(arrayExercise));
 
-        int solution = 0; //variable to keep the solution
-        for (int i = 0; i < arrayExercise.length; i++){
-
-        }
-        System.out.println(solution);
+        //We print the second-highest number of the array
+        System.out.println(arrayExercise[1]);
 
     }
 
@@ -46,7 +46,7 @@ public class Functions {
         System.out.println("The fibonacci series of " + number + " is: ");
 
         int a = 0;
-        System.out.println(a); //I've printed the 0 because the fibonacci series starts with 0
+        System.out.println(a); //We've printed the 0 because the fibonacci series starts with 0
         int b = 1;
         int fibonacci = 1;
         for (int k = 0; k < number; k++){
