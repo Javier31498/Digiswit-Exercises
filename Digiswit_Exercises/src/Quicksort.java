@@ -6,23 +6,22 @@ public class Quicksort {
 
         int p = array[left]; //This is the pivot of Quicksort
         while (true) {
-            //While the left element is higher than the pivot, the index get moving
+            // While the left element is higher than the pivot, the index moves
             while (array[left] > p) {
                 left++;
             }
-            //While the right element is lower than the pivot, the index get moving
+            // While the right element is lower than the pivot, the index moves
             while (array[right] < p) {
                 right--;
             }
 
-            //If the left element is high or equal to the right element, we dont exchange them
+            // If the left element is high or equal to the right element, we don't exchange them
             if (left >= right) {
-                // Indicar "en dónde nos quedamos" para poder dividir el arreglo de nuevo
-                // y ordenar los demás elementos
+                // We return right to divide and sort again
                 return right;
             }
 
-            //If the statement above is not true, then we exchange their positions
+            // If the statement above is not true, then we exchange their positions
             else {
                 int temporal = array[left];
                 array[left] = array[right];
