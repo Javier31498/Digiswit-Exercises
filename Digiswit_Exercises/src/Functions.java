@@ -15,12 +15,12 @@ public class Functions {
 
         Scanner reader = new Scanner(System.in);
         int size = 0;
-        System.out.println("Enter an integer number: ");
+        System.out.println("Enter an integer number for the array size: ");
         size = reader.nextInt();
 
         //We'll randomize elements of the array.
         Random random = new Random();
-        int[] arrayExercise = random.ints(size, 1,100).toArray();
+        int[] arrayExercise = random.ints(size, 1,1000).toArray();
 
         //Printing the array for the user
         System.out.println("Array created: " + Arrays.toString(arrayExercise));
