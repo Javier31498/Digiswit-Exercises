@@ -31,8 +31,16 @@ public class Functions {
         System.out.println("Array sorted: " + Arrays.toString(arrayExercise));
 
         //We print the second-highest number of the array
-        System.out.println(arrayExercise[1]);
-
+        //We handle the case of the largest number repeated multiple times. Like this, we always get the SECOND largest
+        int flag = 0;
+        for(int i = 0;  i < arrayExercise.length; i++){
+            if(i < arrayExercise.length - 1){
+                if(arrayExercise[i+1] < arrayExercise[i] && flag!=1){
+                    System.out.println(arrayExercise[i+1]);
+                    flag = 1;
+                }
+            }
+        }
     }
 
     public static void exercise_2() throws ParseException {
