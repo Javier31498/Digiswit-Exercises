@@ -13,7 +13,7 @@ For the application to work, it is enough to execute the Main.java class. After 
 
 - Option 1: Exercise 1 - Find the second largest number in an array:
 
-The user is going to enter a number to establish the size of the array. Then, the program will fill the array with random numbers between 1 and 1000. The program will sort the array in descending order, and the second largest number will be displayed on the console for the user. 
+The user is going to enter a number to establish the size of the array. Then, the program will fill the array with random numbers between 1 and 1000. The program will sort the array in descending order with a class implementing a Quick Sort algorithm, and the second largest number will be displayed on the console for the user. 
 ![2](https://user-images.githubusercontent.com/71838439/209253844-f7942186-0db2-4d4d-ab35-11b5dc4bdb9f.png)
 
 - Option 2: Exercise 2 - Print the Fibonacci series of a given integer number
